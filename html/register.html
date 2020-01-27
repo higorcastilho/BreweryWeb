@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Brasserie - Análises Cervejeiras</title>
+    <link rel="stylesheet" href="../css/index.css"/>
+    <link rel="stylesheet" href="../css/register.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/097fcc59cb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/cart.css" />
+</head>
+<body>
+
+    <div class="topnav" id="myTopnav">
+        <a href="index.html">Início</a>
+        <a href="register.html" class="active">Cadastre-se</a>
+        <a href="talkToUs.html">Tire suas dúvidas</a>
+        <a href="about.html">Quem somos</a>
+        <a href="javascript:void(0);" class="icon" onclick="toggleBarMenu()">
+            <i class="fa fa-bars"></i>
+        </a>
+        <a class="cart-icon" href="#cart">
+            <i class="fas fa-shopping-cart"></i>
+        </a>
+    </div>
+
+    <div class="cart-container">
+        <div class="shopping-cart">
+            <ul class="cart-ul">
+                <li>Carrinho vazio</li>
+            </ul>
+        </div>
+    </div>
+
+    <header class="header">
+        <h1>Cadastre sua cervejaria</h1>
+    </header>
+
+    <main>
+        <form onsubmit="newRegister.addRegister(event)">
+            <label for="breweryName"> Nome da cervejaria: </label>
+            <input id="breweryName" type="text" autofocus required />
+
+            <label for="cnpj"> CNPJ: </label>
+            <input id="cnpj" type="text" required />
+
+            <label for="address"> Endereço: </label>
+            <input id="address" type="text" required />
+
+            <label for="contactPhone"> Telefone para contato: </label>
+            <input id="contactPhone" type="text" required />
+
+            <label for="email"> Email: </label>
+            <input id="email" type="text" required />
+
+            <label for="password"> Senha: </label>
+            <input id="password" type="password" autofocus required />
+
+            <input id="botaoCadastro" type="submit" value="Finalizar cadastro"/>
+            
+        </form>
+
+        <div id="message-view">
+
+        </div>
+
+        <h2 style="text-align:center; margin-top: 2em;">Os dados abaixo serão enviados posteriormente a um banco de dados</h2>
+
+        <div class="Row-Register-View"></div>
+
+    </main>
+              
+
+<script src="../main.js"></script>
+<script src="../cart.js"></script>
+<script src="../js/app/models/Register.js"></script>
+<script src="../js/app/controllers/RegisterController.js"></script>
+<script src="../js/app/models/RegisterList.js"></script>
+<script src="../js/app/helpers/DateHelper.js"></script>
+<script src="../js/app/views/View.js"></script>
+<script src="../js/app/views/RowRegistersView.js"></script>
+<script src="../js/app/models/Message.js"></script>
+<script src="../js/app/views/MessageView.js"></script>
+<script src="../js/app/services/ProxyFactory.js"></script>
+<script src="../js/app/helpers/Bind.js"></script>
+
+
+<script> 
+
+    let newRegister = new RegisterController();
+
+</script>
+
+</body>
+</html>

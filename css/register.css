@@ -1,0 +1,68 @@
+.header h1 {
+    text-align: center;
+    color: firebrick;
+    padding: 1em;
+}
+main {
+    width: 940px;
+    margin: 0 auto;
+}
+form {
+    font-weight: bold;
+}
+
+form label {
+    text-align: center;    
+    display: block;
+    font-size: 1.2em;
+    color: firebrick;
+    margin: 0.5em;
+}
+
+form input {
+    display: block;
+    padding: 2px;
+    width: 50%;
+    text-align: center;
+    font-size: 1.2em;
+    margin: 10px auto;
+    border: 1px solid firebrick;
+}
+
+form #botaoCadastro {
+    margin-top: 2em;
+    background:  firebrick;
+    color:white;
+    transition: 0.5s;
+    padding: 8px 0;
+}
+
+form #botaoCadastro:hover {
+    background: rgb(129, 11, 11);
+    color:white;
+    cursor: pointer;
+}
+
+.table-all {
+
+    width: 500px;
+    margin: 50px auto;
+    box-sizing: border-box;
+    text-align: center;
+    border : 1px solid black;
+}
+
+.table-all thead tr th, .table-all tbody tr td {
+    padding: 2px 45px;
+}
+
+#message-view {
+
+    text-align: center;
+    margin: 20px auto;
+    width: 300px;
+    background: firebrick;
+    color: white;
+    font-weight: bold;
+}
+
